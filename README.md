@@ -6,7 +6,9 @@ A ansible role to do cofiguration for kubernetes masternode on AWS EC2 instance.
 Requirements
 ------------
 
+Require a EC2 Instance
 Because role uses EC2 module, system(control node) require require boto and boto3 package.
+To install boto and boto3 package run command: pip3 install boto boto3  
 
 Role Variables
 --------------
@@ -21,12 +23,12 @@ None
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
-
+- hosts: servers
+  become: yes
+  remote_user: ec2-user
+  roles:
+    - role: "K8S_master_config"
+  
 License
 -------
 
@@ -35,4 +37,5 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+My linkedIn profile:- linkedin.com/in/niraj-kumar-
+
