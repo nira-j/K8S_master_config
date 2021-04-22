@@ -23,11 +23,11 @@ None
 Example Playbook
 ----------------
 
-\- hosts: servers<br>
-  become: yes<br>
-  remote_user: ec2-user<br>
-  roles:<br>
-    \- role: "K8S_master_config"
+\-  hosts: servers<br>
+    become: yes<br>
+    remote_user: ec2-user<br>
+    roles:<br>
+    \-  role: "K8S_master_config"
   
 License
 -------
