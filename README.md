@@ -23,7 +23,7 @@ None
 Example Playbook
 ----------------
 
-\-  hosts: servers<br>
+\-\ hosts: servers<br>
     become: yes<br>
     remote_user: ec2-user<br>
     roles:<br>
